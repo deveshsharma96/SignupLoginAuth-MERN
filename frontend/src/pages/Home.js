@@ -67,8 +67,7 @@ function Home() {
     className="app-card"
     onClick={() =>
       window.open(
-        'https://deveshsharma96.github.io/WetherForecast-and-AQI-Detail-using-api/',
-        '_blank'
+        
       )
     }
   >
@@ -80,8 +79,7 @@ function Home() {
     className="app-card"
     onClick={() =>
       window.open(
-        'https://deveshsharma96.github.io/CurrencyExchange-using-api-connection/',
-        '_blank'
+        
       )
     }
   >
