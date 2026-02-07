@@ -1,0 +1,169 @@
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Page center */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form card */
+form {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 36px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Input wrapper */
+form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Button */
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+
+button:hover {
+  background-color: #4338ca;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Bottom text */
+span {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Login link */
+span a {
+  color: #4f46e5;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+span a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===============================
+   HOME PAGE CARDS
+================================ */
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.app-card {
+  flex: 1;
+  min-width: 260px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #4f46e5;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+}
+
+.app-card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.app-card p {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
+
+
+.welcome-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
