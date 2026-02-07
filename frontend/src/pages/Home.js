@@ -26,7 +26,7 @@ function Home() {
 
     const fetchProducts = async () => {
         try{
-        const url = "https://registration-login-authentication-m.vercel.app/products";
+        const url = "http://localhost:8080/products";
         const headers = {
             headers: {
                 'Authorization' : localStorage.getItem('jwtToken')
@@ -67,7 +67,8 @@ function Home() {
     className="app-card"
     onClick={() =>
       window.open(
-        
+        'https://deveshsharma96.github.io/WetherForecast-and-AQI-Detail-using-api/',
+        '_blank'
       )
     }
   >
@@ -79,7 +80,8 @@ function Home() {
     className="app-card"
     onClick={() =>
       window.open(
-        
+        'https://deveshsharma96.github.io/CurrencyExchange-using-api-connection/',
+        '_blank'
       )
     }
   >
